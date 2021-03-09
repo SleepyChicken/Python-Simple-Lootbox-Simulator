@@ -1,3 +1,7 @@
+'''
+        Written by SleepyChicken
+'''
+
 import random
 
 s = 0
