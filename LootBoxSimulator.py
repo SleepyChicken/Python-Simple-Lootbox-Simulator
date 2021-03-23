@@ -49,14 +49,14 @@ def mode1(s, a, b, c, countS, countA, countB, countC) :
     n = int(input('How many time ? : '))
         
     for i in range(n) :
-        rand = random.randrange(1, int((100/s)+1))
+        rand = random.randrange(1, int((100/s)))
         if 0 < rand <= ((100/s)*(s/100)) :
             countS = countS + 1
         elif ((100/s)*(s/100)) < rand <= ((100/s)*(a/100)) :
             countA = countA + 1
         elif ((100/s)*(a/100)) < rand <= ((100/s)*(b/100))+((100/s)*(a/100)) :
             countB = countB + 1
-        elif ((100/s)*(b/100))+((100/s)*(a/100)) < rand <= ((100/s)*(c/100))+((100/s)*(b/100))+((100/s)*(a/100))+1 :
+        elif ((100/s)*(b/100))+((100/s)*(a/100)) < rand <= ((100/s)*(c/100))+((100/s)*(b/100))+((100/s)*(a/100)) :
             countC = countC + 1
 
     print('You rolled rank S '+str(countS)+' time')   
